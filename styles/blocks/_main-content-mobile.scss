@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+    .main-content {
+        margin: 0;
+        width: 95%;
+        &__title {
+            font-size: 2rem;
+            margin: -1.6rem 0 0rem 0;
+            text-shadow: none;
+        }
+    }
+    .sale {
+        display: none;
+    }
+    .container-orders {
+        display: none;
+        a, div{
+            margin: 0 1.5rem 0 0;
+        }
+    }
+    .order-seletcion {
+        display: none;
+    }
+    .order-buy-now  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 100%;
+        height: 5.5rem;
+        background: rgba(255, 207, 45, 1);
+        border-radius: 1rem;
+        margin-top: 4.5rem;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        text-align: center;
+        color: black;
+    }
+    .agreement__checkbox {
+        width: 2rem;
+        height: 2rem;
+        
+    }
+    
+    .diamond-block {
+        display: none;
+    }
+    .diamond-block-mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: normal;
+        .diamond-block__icon {
+            background-color: rgb(149, 100, 170);
+            width: 1.7rem;
+            height: 1.6rem;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            display: inline-block;
+        }
+        &__diamond-img {
+            display: flex;
+            justify-content: center;
+        }
+        &__diamond {
+            width: 8rem;
+            height: 7rem;
+        }
+        &__logo {
+            width: 3rem;
+            height: 3rem;
+            img {
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+        }
+        &__spend, &__use, &__glases, &__gift, &__settings, &__view {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            span {
+                font-weight: 700;
+                font-size: 1.2rem;
+                line-height: 1.3rem;
+                color: rgba(149, 100, 170, 1);
+                margin-left: 1rem;
+            }
+        }
+        &__use {
+            margin-top: 0;
+        }
+        a:active {
+            .diamond-block__icon {
+                background-color: #FFCF2D;
+                animation: rotatePhoto 1s infinite;
+            }
+        }
+    }
+}
+@media (max-width: 300px) {
+    .main-content__title {
+        margin: -0.6rem 0 1rem 0;
+        line-height: 2.5rem;
+    }
+}
+
+@keyframes rotatePhoto {
+    0% {
+        transform: rotate(0deg); 
+    }
+    25% {
+        transform: rotate(-90deg); 
+    }
+    50% {
+        transform: rotate(0deg); 
+    }
+    75% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
+}

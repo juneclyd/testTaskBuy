@@ -1,0 +1,172 @@
+.main-content {
+    width: 50%;
+    margin-left: 2.5rem;
+    &__title {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 4.5rem;
+        text-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+        margin: -0.6rem 0 2.5rem 0;
+    }
+}
+.line-long {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(149, 100, 170, 1);
+    margin: 0 0 3.3rem 0;
+}
+.sale {
+    width: 100%;
+    background-color: rgba(193, 92, 161, 1);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    &__title {
+        text-shadow: rgba(255, 255, 255, 1) 0.1rem 0.1rem 0, rgba(255, 255, 255, 1) -0.1rem -0.1rem 0, rgba(255, 255, 255, 1) -0.1rem 0.1rem 0, rgba(255, 255, 255, 1) 0.1rem -0.1rem 0;
+        color: rgba(255, 207, 45, 1);
+        font-weight: 700;
+        font-size: 4rem;
+        margin: 0;
+    }
+    &__info {
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, 1);
+    }
+    &__time{
+        width: 25%;
+        height: 5.6rem;
+        background-color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+        font-size: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+    }
+    span:nth-child(-n+4) { 
+        margin-right: 0.8rem;
+    }
+}
+
+.container-orders {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    margin-top: 2.3rem;
+    &__order {
+        flex: 1 1 calc(21% - 20px);
+        position: relative;
+        border-radius: 1rem;
+        background-color: rgba(149, 100, 170, 0.1);
+        border: 0.2rem solid rgba(149, 100, 170, 1);
+        width: 18%;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__text {
+        opacity: 0; 
+        transition: opacity 0.5s ease;
+        background-color: rgb(255, 207, 45);
+        font-size: 1.4rem;
+        width: 11rem;
+        height: 2rem;
+        bottom: 2rem;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        line-height: 1.6rem;
+        position: absolute;
+        bottom: 10.5rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    &__price {
+        font-weight: 700;
+        line-height: 2.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        span:nth-child(1) { 
+            font-size: 2.4rem;
+        }
+        span:nth-child(2) { 
+            font-size: 0.8rem;
+            font-weight: 700;
+            background-color: rgba(255, 207, 45, 1);
+            width: 1.7rem;
+            height: 1.7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+        }
+    }
+    &__buy {
+        text-decoration: none;
+        color: rgba(0,0,0,0.25);
+        background-color: rgba(255, 255, 255, 1);
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        padding: 1.4rem 2rem;
+        border-radius: 5px;
+        margin-top: 1.6rem;
+    }
+
+    &__order:hover {
+        background-color: rgba(149, 100, 170, 1);
+
+        .container-orders {
+            &__price {
+                color: white;
+    
+            }
+            &__text {
+                opacity: 1;
+            }
+            &__buy {
+                background-color: rgba(255, 207, 45, 1);
+                color: black;
+            }
+        }
+        
+    }
+
+}
+
+.order-seletcion {
+    width: 100%;
+    height: 7.4rem;
+    background: #AA646433;
+    border-radius: 1rem;
+    border: 2px solid #AA6464;
+    margin-top: 20px;
+}
+
+.agreement {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    &__checkbox {
+        margin-right: 1.1rem;
+        accent-color: #9564AA; 
+    }
+    span {
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    a { 
+        text-decoration: none;
+        color: rgba(149, 100, 170, 1);
+    }
+    
+}

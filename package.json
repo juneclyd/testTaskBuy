@@ -1,0 +1,12 @@
+{
+  "name": "my-project",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel serve",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "svgo": "^3.3.2"
+  }
+}
